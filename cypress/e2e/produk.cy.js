@@ -1,0 +1,26 @@
+const loginPage = require('../support/pages/loginPage')
+const homePage = require('../support/pages/homePage')
+const produkPage = require('../support/pages/produkPage')
+
+describe('Halaman Produk', () => {
+
+    it('Tambah Produk Berhasil', () => {
+      loginPage.visitLoginPageUrl()
+      loginPage.verifyLoginPageAppears()
+      loginPage.inputEmail1()
+      loginPage.inputPassword1()
+      loginPage.clickLoginButton()
+      homePage.verifyHomePageAppears()
+      homePage.clickTombolProduk()
+      produkPage.verifyProdukPageAppears()
+      produkPage.clickTombolTambah()
+      produkPage.inputNamaProduk()
+      produkPage.inputDeskripsiProduk()
+      produkPage.inputHargabeliProduk()
+      produkPage.inputHargajualProduk()
+      produkPage.inputStokProduk()
+      produkPage.clickKategoriProduk()
+      produkPage.selectKategoriProduk()
+    //   produkPage.clickTombolSimpan()      
+    })
+})
