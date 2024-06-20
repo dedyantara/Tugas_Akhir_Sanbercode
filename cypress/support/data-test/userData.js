@@ -13,5 +13,7 @@ module.exports = {
     hargabeli_produk: '12000',
     hargajual_produk: '15000',
     stok_produk: '10',
-    kategori_produk: ''
+
+    nama_kategori: 'Chemical',
+    deskripsi_kategori: 'Barang barang chemical'
 }

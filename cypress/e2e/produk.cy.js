@@ -21,6 +21,6 @@ describe('Halaman Produk', () => {
       produkPage.inputStokProduk()
       produkPage.clickKategoriProduk()
       produkPage.selectKategoriProduk()
-    //   produkPage.clickTombolSimpan()      
+      produkPage.clickTombolSimpan()      
     })
 })
